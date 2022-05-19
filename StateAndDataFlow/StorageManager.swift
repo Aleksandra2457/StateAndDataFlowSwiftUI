@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class StorageManager: ObservableObject {
+final class StorageManager: ObservableObject {
     
     @AppStorage("name") var name = ""
     @AppStorage("isRegistered") var isRegistered = false
