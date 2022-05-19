@@ -52,10 +52,7 @@ struct ButtonView: View {
             RoundedRectangle(cornerRadius: 20).stroke(.black, lineWidth: 4)
         }
         Spacer()
-        Button(action: {
-            storageManager.name = ""
-            storageManager.isRegistered = false
-        }) {
+        Button(action: logOutButtonPressed) {
             Text("Log Out")
                 .font(.title)
                 .fontWeight(.bold)
@@ -67,6 +64,11 @@ struct ButtonView: View {
         .overlay {
             RoundedRectangle(cornerRadius: 20).stroke(.black, lineWidth: 4)
         }
+    }
+    
+    private func logOutButtonPressed() {
+        storageManager.name = ""
+        storageManager.isRegistered = false
     }
 }
 
