@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct RegisterView: View {
-    @EnvironmentObject private var userManger: UserManager
+    @EnvironmentObject private var userManager: UserManager
+    @EnvironmentObject private var storageManager: StorageManager
     
     @State private var name = ""
     @State private var nameSymbolsCount = 0
@@ -45,8 +46,10 @@ struct RegisterView: View {
     }
     
     private func registerUser() {
-            userManger.name = name
-            userManger.isRegistered.toggle()
+            userManager.name = name
+            storageManager.name = userManager.name
+            userManager.isRegistered.toggle()
+            storageManager.isRegistered = userManager.isRegistered
     }
 }
 
