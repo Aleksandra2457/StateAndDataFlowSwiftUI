@@ -2,58 +2,62 @@
 //  RegisterView.swift
 //  StateAndDataFlow
 //
-//  Created by Alexey Efimov on 18.05.2022.
+//  Created by Александра Лесовская on 23.05.2022.
 //
 
 import SwiftUI
 
 struct RegisterView: View {
-    @EnvironmentObject private var userManager: UserManager
-    @EnvironmentObject private var storageManager: StorageManager
     
-    @State private var name = ""
-    @State private var nameSymbolsCount = 0
-    @State private var namesSymbolsLabelColor = Color.red
-    @State private var okButtonIsDisabled = true
+    @EnvironmentObject private var userManager: UserManager
     
     var body: some View {
         VStack {
-            HStack  {
-                TextField("Enter your name...", text: $name)
-                    .multilineTextAlignment(.center)
-                    .onChange(of: name) { newValue in
-                        nameSymbolsCount = newValue.count
-                        if newValue.count < 3 {
-                            namesSymbolsLabelColor = .red
-                        } else {
-                            namesSymbolsLabelColor = .green
-                            okButtonIsDisabled = false
-                        }
-                    }
-                Text("\(nameSymbolsCount)")
-                    .foregroundColor(namesSymbolsLabelColor)
-                    .padding(.trailing, 10)
-            }
+            UserNameTF(
+                name: $userManager.user.name,
+                nameIsValid: userManager.nameIsValid
+            )
             Button(action: registerUser) {
                 HStack {
                     Image(systemName: "checkmark.circle")
                     Text("OK")
                 }
-                .disabled(okButtonIsDisabled)
             }
-            
+            .disabled(!userManager.nameIsValid)
         }
+        .padding()
     }
     
     private func registerUser() {
-            userManager.name = name
-            storageManager.name = userManager.name
-            userManager.isRegistered.toggle()
-            storageManager.isRegistered = userManager.isRegistered
+        if !userManager.user.name.isEmpty {
+            userManager.user.isRegistered.toggle()
+            DataManager.shared.save(user: userManager.user)
+        }
     }
 }
 
-struct RegisterView_Previews: PreviewProvider {
+struct UserNameTF: View {
+    
+    @Binding var name: String
+    var nameIsValid = false
+    
+    var body: some View {
+        ZStack {
+            TextField("Type your name...", text: $name)
+                .multilineTextAlignment(.center)
+            HStack {
+                Spacer()
+                Text("\(name.count)")
+                    .font(.callout)
+                    .foregroundColor(nameIsValid ? .green : .red)
+                    .padding([.top, .trailing])
+            }
+            .padding(.bottom)
+        }
+    }
+}
+
+struct Register_Previews: PreviewProvider {
     static var previews: some View {
         RegisterView()
             .environmentObject(UserManager())

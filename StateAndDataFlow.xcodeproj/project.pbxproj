@@ -8,27 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		A8EA88B0283566FE005934B6 /* StateAndDataFlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EA88AF283566FE005934B6 /* StateAndDataFlowApp.swift */; };
-		A8EA88B2283566FE005934B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EA88B1283566FE005934B6 /* ContentView.swift */; };
 		A8EA88B4283566FF005934B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8EA88B3283566FF005934B6 /* Assets.xcassets */; };
 		A8EA88B7283566FF005934B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8EA88B6283566FF005934B6 /* Preview Assets.xcassets */; };
-		A8EA88BE28356B37005934B6 /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EA88BD28356B37005934B6 /* TimeCounter.swift */; };
-		A8EA88C0283571B3005934B6 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EA88BF283571B3005934B6 /* RegisterView.swift */; };
-		A8EA88C2283572FD005934B6 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EA88C1283572FD005934B6 /* UserManager.swift */; };
-		A8EA88C4283575E2005934B6 /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EA88C3283575E2005934B6 /* StarterView.swift */; };
-		D37B5E952836A40A006DF37B /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37B5E942836A40A006DF37B /* StorageManager.swift */; };
+		D3F33BFD283B648C00A34853 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F33BFC283B648C00A34853 /* DataManager.swift */; };
+		D3F33BFF283B64D100A34853 /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F33BFE283B64D100A34853 /* StarterView.swift */; };
+		D3F33C01283B64F500A34853 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F33C00283B64F500A34853 /* RegisterView.swift */; };
+		D3F33C03283B651200A34853 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F33C02283B651200A34853 /* TimerView.swift */; };
+		D3F33C05283B653400A34853 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F33C04283B653400A34853 /* ButtonView.swift */; };
+		D3F33C07283B657E00A34853 /* ButtonViewAppearanceModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F33C06283B657E00A34853 /* ButtonViewAppearanceModifier.swift */; };
+		D3F33C09283B65AB00A34853 /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F33C08283B65AB00A34853 /* TimeCounter.swift */; };
+		D3F33C0B283B65C700A34853 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F33C0A283B65C700A34853 /* UserManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A8EA88AC283566FE005934B6 /* StateAndDataFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StateAndDataFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8EA88AF283566FE005934B6 /* StateAndDataFlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateAndDataFlowApp.swift; sourceTree = "<group>"; };
-		A8EA88B1283566FE005934B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A8EA88B3283566FF005934B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8EA88B6283566FF005934B6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A8EA88BD28356B37005934B6 /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
-		A8EA88BF283571B3005934B6 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
-		A8EA88C1283572FD005934B6 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
-		A8EA88C3283575E2005934B6 /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
-		D37B5E942836A40A006DF37B /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		D3F33BFC283B648C00A34853 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		D3F33BFE283B64D100A34853 /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
+		D3F33C00283B64F500A34853 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		D3F33C02283B651200A34853 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		D3F33C04283B653400A34853 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		D3F33C06283B657E00A34853 /* ButtonViewAppearanceModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewAppearanceModifier.swift; sourceTree = "<group>"; };
+		D3F33C08283B65AB00A34853 /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
+		D3F33C0A283B65C700A34853 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,12 +66,14 @@
 			isa = PBXGroup;
 			children = (
 				A8EA88AF283566FE005934B6 /* StateAndDataFlowApp.swift */,
-				D37B5E942836A40A006DF37B /* StorageManager.swift */,
-				A8EA88B1283566FE005934B6 /* ContentView.swift */,
-				A8EA88BF283571B3005934B6 /* RegisterView.swift */,
-				A8EA88C3283575E2005934B6 /* StarterView.swift */,
-				A8EA88BD28356B37005934B6 /* TimeCounter.swift */,
-				A8EA88C1283572FD005934B6 /* UserManager.swift */,
+				D3F33BFC283B648C00A34853 /* DataManager.swift */,
+				D3F33C0A283B65C700A34853 /* UserManager.swift */,
+				D3F33C04283B653400A34853 /* ButtonView.swift */,
+				D3F33C08283B65AB00A34853 /* TimeCounter.swift */,
+				D3F33C06283B657E00A34853 /* ButtonViewAppearanceModifier.swift */,
+				D3F33BFE283B64D100A34853 /* StarterView.swift */,
+				D3F33C00283B64F500A34853 /* RegisterView.swift */,
+				D3F33C02283B651200A34853 /* TimerView.swift */,
 				A8EA88B3283566FF005934B6 /* Assets.xcassets */,
 				A8EA88B5283566FF005934B6 /* Preview Content */,
 			);
@@ -152,13 +158,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8EA88BE28356B37005934B6 /* TimeCounter.swift in Sources */,
-				A8EA88C0283571B3005934B6 /* RegisterView.swift in Sources */,
-				A8EA88C4283575E2005934B6 /* StarterView.swift in Sources */,
-				D37B5E952836A40A006DF37B /* StorageManager.swift in Sources */,
-				A8EA88B2283566FE005934B6 /* ContentView.swift in Sources */,
-				A8EA88C2283572FD005934B6 /* UserManager.swift in Sources */,
+				D3F33C0B283B65C700A34853 /* UserManager.swift in Sources */,
+				D3F33C03283B651200A34853 /* TimerView.swift in Sources */,
+				D3F33BFF283B64D100A34853 /* StarterView.swift in Sources */,
+				D3F33C05283B653400A34853 /* ButtonView.swift in Sources */,
+				D3F33C09283B65AB00A34853 /* TimeCounter.swift in Sources */,
+				D3F33C01283B64F500A34853 /* RegisterView.swift in Sources */,
+				D3F33BFD283B648C00A34853 /* DataManager.swift in Sources */,
 				A8EA88B0283566FE005934B6 /* StateAndDataFlowApp.swift in Sources */,
+				D3F33C07283B657E00A34853 /* ButtonViewAppearanceModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
